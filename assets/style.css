@@ -208,11 +208,7 @@ article{
     text-align: center;
     width: 150px;
 }
-.link:hover{
-    transition: 0.3s;
-    padding: 7px;
-}
-
+ 
 li span {
     margin-right: 5px; /* Adjust the value as needed for your desired gap */
   }
