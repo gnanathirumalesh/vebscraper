@@ -2,6 +2,8 @@
 const submitButton = document.getElementById("submit");
 
 submitButton.addEventListener("click", function () {
+ 
+ 
 // Select the result container
 const resultContainer = document.querySelector('.result');
 resultContainer.innerHTML = `<p class="loader">Please Wait...</p>`;

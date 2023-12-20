@@ -61,12 +61,9 @@ main{
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(21, 21, 21);
     color: #ffffff;
-    transition: 0.2s;
+  
 }
-.input button:hover{
-    transition: 0.3s;
-    width: 170px;
-}
+ 
 
 .input{
    width: 100%;
@@ -147,7 +144,6 @@ ol{
 .fail{
     color:red;
     font-weight: bold;
-
 }
 
 
