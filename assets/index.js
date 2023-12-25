@@ -238,7 +238,7 @@ data.security.forEach(securityMeasure => {
 });
 resultContainer.appendChild(securityList);
 
-//Text File
+/*
 const textFile = document.createElement('h2');
 textFile.innerText = "Download Text File";
 resultContainer.appendChild(textFile);
@@ -248,6 +248,7 @@ downloadButton.innerHTML = "Download .txt";
 downloadButton.className = 'textdownload';
 resultContainer.appendChild(downloadButton);
 
+// using another api
 downloadButton.onclick = function() {
   // Create a Blob containing the text data
   const blob = new Blob([data.pageContent.data], { type: 'text/plain' });
@@ -264,7 +265,7 @@ downloadButton.onclick = function() {
   // Remove the link element from the DOM
   resultContainer.removeChild(link);
 };
-
+*/
 
 // Display common words
 const commonWordsSection = document.createElement('h2');

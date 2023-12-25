@@ -31,6 +31,7 @@ body {
 }
 .nav-link{
     color:rgb(255, 255, 255);
+    margin-left: 15px;
 }
  
 .navbar-brand{
@@ -160,7 +161,15 @@ ol{
     border:1px solid black;
     border-radius: 18px;
 }
+.downloading{
+    color:rgb(18, 152, 242);
+    text-align: center;
+}
+.completed{
+    color: rgb(21, 132, 21);
+    text-align: center;
 
+}
 
 /**** HEADINGS *****/
  
@@ -258,6 +267,9 @@ footer a{
 footer ul li{
     list-style: none;
 }
+footer p{
+    color:white;
+}
 .privacy, .terms{
     display: flex;
     flex-direction: column;
@@ -270,6 +282,10 @@ footer ul li{
 #submitlink{
     text-decoration: none;
     color: white;
+}
+#urltopdf{
+    width: 300px;
+    padding: 9px;
 }
 
 /*** WRAPPER ***/
