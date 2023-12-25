@@ -238,6 +238,33 @@ data.security.forEach(securityMeasure => {
 });
 resultContainer.appendChild(securityList);
 
+//Text File
+const textFile = document.createElement('h2');
+textFile.innerText = "Download Text File";
+resultContainer.appendChild(textFile);
+
+const downloadButton = document.createElement('button');
+downloadButton.innerHTML = "Download .txt";
+downloadButton.className = 'textdownload';
+resultContainer.appendChild(downloadButton);
+
+downloadButton.onclick = function() {
+  // Create a Blob containing the text data
+  const blob = new Blob([data.pageContent.data], { type: 'text/plain' });
+
+  // Create a link element and trigger a click to download the file
+  const link = document.createElement('a');
+  link.href = window.URL.createObjectURL(blob);
+  link.download = 'textData.txt';
+  resultContainer.appendChild(link);
+
+  // Trigger a click on the link to start the download
+  link.click();
+
+  // Remove the link element from the DOM
+  resultContainer.removeChild(link);
+};
+
 
 // Display common words
 const commonWordsSection = document.createElement('h2');

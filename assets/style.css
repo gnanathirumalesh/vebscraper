@@ -63,7 +63,13 @@ main{
     color: #ffffff;
   
 }
- 
+
+.input a{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+
+}
 
 .input{
    width: 100%;
@@ -145,7 +151,15 @@ ol{
     color:red;
     font-weight: bold;
 }
-
+.textdownload{
+    width: 200px;
+    color: white;
+    background-color: black;
+    padding: 9px;
+    margin: 9px;
+    border:1px solid black;
+    border-radius: 18px;
+}
 
 
 /**** HEADINGS *****/
@@ -264,16 +278,20 @@ footer ul li{
     padding: 10px;
     width: 100%;
     border: 1px solid black;
-    justify-content: space-around;
+    gap:15px;
+    margin: 10px;
     flex-wrap: wrap;
 }
 .wrapper h2{
     text-align: center;
     color:rgb(18, 152, 242);
+    border-bottom: 1px solid black;
+    padding: 10px;
+
 }
 .wrapper ol {
     list-style-type:decimal;
-    margin-left: 5px;
+ 
 }
 .wrapper ol li{
      color: #1d1d1d;
@@ -283,6 +301,8 @@ footer ul li{
     display: flex;
     gap:10px;
     flex-direction: column;
+    margin: 10px;
+    padding: 10px;
 }
 
 @media screen and (max-width:1000px) {
