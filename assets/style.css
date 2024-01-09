@@ -20,8 +20,6 @@ body {
     padding: 15px;
     border-bottom: 1px solid  rgb(18, 152, 242);
     background-color: rgb(18, 152, 242);
-
-   
 }
 .navbar-nav{
     display: flex;
@@ -36,6 +34,7 @@ body {
  
 .navbar-brand{
     color: rgb(255, 255, 255);
+    font-size: 23px;
  }
 .navbar-brand:hover{
     color: rgb(241, 241, 241);
@@ -59,8 +58,8 @@ main{
     width: 150px;
     border-radius: 18px;
     padding: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(21, 21, 21);
+    border: 1px solid rgb(18, 152, 242);
+    background-color: rgb(18, 152, 242);
     color: #ffffff;
   
 }
@@ -129,14 +128,14 @@ ol{
     flex-direction: column;
     gap:10px;
     margin-top:50px;
-    padding: 9px;   
+    padding: 15px;   
     border-radius: 18px;
 }
 .loader{
     font-size: 21px;
     align-self: center;
     font-weight: bold;
-   color: rgb(0, 0, 0);
+   color: rgb(18, 152, 242);
 }
 
 .result h2{
@@ -262,6 +261,7 @@ footer a{
     text-decoration: none;
     color: #ffffff;
     
+    
 }
  
 footer ul li{
@@ -278,6 +278,7 @@ footer p{
  
 .link{
     align-self:flex-start;
+    background-color: rgb(18, 152, 242);;
 }
 #submitlink{
     text-decoration: none;
@@ -293,7 +294,7 @@ footer p{
     display: flex;
     padding: 10px;
     width: 100%;
-    border: 1px solid black;
+    
     gap:15px;
     margin: 10px;
     flex-wrap: wrap;

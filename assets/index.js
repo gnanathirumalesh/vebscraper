@@ -199,7 +199,7 @@ ${data.canonical_tag.is_canonical ? `<li>Your Page Contains Canonical Link Tag</
  <li><span id="highlight">Canonical Link: </span> <span id="data"> <a href="${data.canonical_tag.link}" target="_blank">${data.canonical_tag.link}</a></span></li>`;
 resultContainer.appendChild(canonicalTagList);
 
-// Display Open Graph tags
+/* Display Open Graph tags
 const ogTagsSection = document.createElement('h2');
 ogTagsSection.innerText = 'Open Graph Tags';
 resultContainer.appendChild(ogTagsSection);
@@ -209,7 +209,57 @@ ogTagsList.innerHTML = `<li><span id="highlight">OG Title: </span> <span id="dat
 <li><span id="highlight">OG Description: </span> <span id="data">${data.og_tags.og_description}</span></li>
 <li><span id="highlight">OG Type: </span> <span id="data">${data.og_tags.og_type}</span></li>
 <li><span id="highlight">OG URL: </span> <span id="data"><a id="data" href="${data.og_tags.og_url}" target="_blank">${data.og_tags.og_url}</a></span></li>`;
-resultContainer.appendChild(ogTagsList);
+resultContainer.appendChild(ogTagsList);*/
+
+
+const ogTagsSection = document.createElement('h2');
+ogTagsSection.innerText = 'Open Graph Tags';
+resultContainer.appendChild(ogTagsSection);
+// Display OG Title if present
+
+if (data.og_tags && data.og_tags.og_title) {
+  const ogTitle = document.createElement('p');
+  ogTitle.innerHTML = `<span id="highlight">OG Title: </span> <span id="data">${data.og_tags.og_title}</span>`;
+  resultContainer.appendChild(ogTitle);
+} else {
+  const noOgTitleMessage = document.createElement('p');
+  noOgTitleMessage.innerText = 'OG Title is not present on the page.';
+  resultContainer.appendChild(noOgTitleMessage);
+}
+
+// Display OG Description if present
+if (data.og_tags && data.og_tags.og_description) {
+  const ogDescription = document.createElement('p');
+  ogDescription.innerHTML = `<span id="highlight">OG Description: </span> <span id="data">${data.og_tags.og_description}</span>`;
+  resultContainer.appendChild(ogDescription);
+} else {
+  const noOgDescriptionMessage = document.createElement('p');
+  noOgDescriptionMessage.innerText = 'OG Description is not present on the page.';
+  resultContainer.appendChild(noOgDescriptionMessage);
+}
+
+// Display OG Type if present
+if (data.og_tags && data.og_tags.og_type) {
+  const ogType = document.createElement('p');
+  ogType.innerHTML = `<span id="highlight">OG Type: </span> <span id="data">${data.og_tags.og_type}</span>`;
+  resultContainer.appendChild(ogType);
+} else {
+  const noOgTypeMessage = document.createElement('p');
+  noOgTypeMessage.innerText = 'OG Type is not present on the page.';
+  resultContainer.appendChild(noOgTypeMessage);
+}
+
+// Display OG URL if present
+if (data.og_tags && data.og_tags.og_url) {
+  const ogUrl = document.createElement('p');
+  ogUrl.innerHTML = `<span id="highlight">OG URL: </span> <span id="data"><a id="data" href="${data.og_tags.og_url}" target="_blank">${data.og_tags.og_url}</a></span>`;
+  resultContainer.appendChild(ogUrl);
+} else {
+  const noOgUrlMessage = document.createElement('p');
+  noOgUrlMessage.innerText = 'OG URL is not present on the page.';
+  resultContainer.appendChild(noOgUrlMessage);
+}
+
 
 
 const socialMediaLinksSection = document.createElement('h2');
