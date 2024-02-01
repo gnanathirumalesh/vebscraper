@@ -140,7 +140,7 @@ ol{
 
 .result h2{
     font-size: 21px;
-    color:rgb(18, 152, 242);
+    color:rgb(255, 102, 0);
 }
 .pass{
     color:green;
@@ -161,7 +161,7 @@ ol{
     border-radius: 18px;
 }
 .downloading{
-    color:rgb(18, 152, 242);
+    color:rgb(255, 102, 0);
     text-align: center;
 }
 .completed{
@@ -278,7 +278,7 @@ footer p{
  
 .link{
     align-self:flex-start;
-    background-color: rgb(18, 152, 242);;
+    background-color: rgb(255, 102, 0);
 }
 #submitlink{
     text-decoration: none;
@@ -301,7 +301,7 @@ footer p{
 }
 .wrapper h2{
     text-align: center;
-    color:rgb(18, 152, 242);
+    color:rgb(255, 102, 0);
     border-bottom: 1px solid black;
     padding: 10px;
 
@@ -320,6 +320,16 @@ footer p{
     flex-direction: column;
     margin: 10px;
     padding: 10px;
+}
+
+.navbar-toggler{
+    color: #ffffff;
+}
+#submit, .link{
+    background-color: rgb(255, 102, 0);
+    padding: 9px;
+    border-radius: 18px;
+    width: 150px;
 }
 
 @media screen and (max-width:1000px) {
