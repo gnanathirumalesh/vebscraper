@@ -169,16 +169,17 @@ ol{
     text-align: center;
 
 }
+ 
 
 /**** HEADINGS *****/
  
 h1{
     font-size: 25px;
-    color:#000000;
+    color:rgb(255, 102, 0);
 }
 h2{
     font-size:21px;
-    color:#121212;
+    color:rgb(255, 102, 0);
 }
 h3{
     font-size: 18px;
